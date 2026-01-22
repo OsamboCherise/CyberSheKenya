@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShe Chronicles - Stories & Insights</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="blog-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="back-to-main">
+                    <i class="fas fa-arrow-left"></i> Back to CyberShe
+                </a>
+                <div class="logo-section">
+                    <h1><i class="fas fa-heart"></i> CyberShe Chronicles</h1>
+                    <p class="tagline">Stories, insights, and voices from our community</p>
+                </div>
+                <div class="header-search">
+                    <input type="text" placeholder="Search stories..." id="searchInput">
+                    <button onclick="searchPosts()"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Featured Post -->
+        <section class="featured-post">
+            <div class="featured-image">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Women in Tech">
+                <div class="featured-badge">FEATURED</div>
+            </div>
+            <div class="featured-content">
+                <h2>Member Spotlight: Cherise's Journey into Cybersecurity</h2>
+                <p class="post-meta"><i class="far fa-calendar"></i> January, 2026 | <i class="far fa-user"></i> Cherise Osambo</p>
+                <p class="featured-excerpt">Discover how Cherise transformed from having a poor tech background to becoming a 
+                    cybersecurity enthusiast through AGCCI and SiemensEmpowerHer Program masterClasses. 
+                    Her inspiring journey shows that with determination and the right community...</p>
+                <a href="posts/cherise-journey.html" class="read-btn">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                <div class="author-links">
+                    <a href="https://www.linkedin.com/in/cherise-osambo" target="_blank" class="linkedin-link">
+                        <i class="fab fa-linkedin"></i> Connect with Cherise on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stay Updated Section -->
+        <section class="stay-updated-section">
+            <div class="update-box">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>How to Stay Updated</h3>
+                <div class="update-options">
+                    <div class="update-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <h4>Check Our Calendar</h4>
+                        <p>Visit the Events Calendar on our main page for upcoming workshops, masterclasses, and community meetups.</p>
+                        <a href="../index.html#events" class="update-link">
+                            View Events Calendar <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="update-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h4>Join WhatsApp Group</h4>
+                        <p>Become a CyberShe member to access exclusive tutorials, resources, and real-time updates.</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQC7HoThxWhxDtDczvPiMkZM6oSHbPhVO6428BSS9lpIxKmw/viewform?usp=header" target="_blank" class="update-link">
+                            Join CyberShe <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="update-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Earn Certification</h4>
+                        <p>Elevate your tech career through expert-led masterclasses, forge meaningful connections through strategic networking, 
+                            and amplify your impact by mentoring the next generation of women in tech. 
+                            Together, we're not just building careers—we're building legacies.
+                        </p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQC7HoThxWhxDtDczvPiMkZM6oSHbPhVO6428BSS9lpIxKmw/viewform?usp=header" 
+                          class="update-link">
+                            Explore Programs <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts Grid -->
+        <section class="blog-grid">
+            <h2 class="section-title">Latest Stories</h2>
+            <div class="filter-tags">
+                <button class="tag-btn active" data-filter="all">All Posts</button>
+                <button class="tag-btn" data-filter="spotlight">Member Spotlight</button>
+                <button class="tag-btn" data-filter="event">Events</button>
+                <button class="tag-btn" data-filter="tutorial">Tutorials</button>
+            </div>
+
+            <div class="posts-container" id="postsContainer">
+                <!-- Posts will be loaded by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="blog-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3><i class="fas fa-heart"></i> CyberShe Chronicles</h3>
+                    <p>Empowering women in cybersecurity through stories and connections</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="../index.html">CyberShe Home</a>
+                    <a href="../index.html#events">Events Calendar</a>
+                    <a href="../index.html#programs">Training Programs</a>
+                    <a href="#submit-story">Submit Your Story</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/cybershe" target="_blank" class="social-link linkedin">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Group
+                        </a>
+                        <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" target="_blank" class="social-link form-link">
+                            <i class="fas fa-user-plus"></i> Join CyberShe
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CyberShe Chronicles. All rights reserved. | Made with <i class="fas fa-heart"></i> for women in tech</p>
+                <p class="disclaimer">Note: Tutorials and exclusive content are available only to registered CyberShe members.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
